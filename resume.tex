@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+      \documentclass[]{deedy-resume-openfont}
+      \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     Profile
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\namesection{Ananyobrata} {Pal}\\\vspace{2pt}\href{mailto:ananyo141@gmail.com}{ananyo141@gmail.com} | +91 8981681849}\\\vspace{4pt}\linksline{\descript{\href{https://www.linkedin.com/in/ananyobrata-pal-7b5178200/}{Linkedin | }}\descript{\href{https://github.com/ananyo141/}{GitHub | }}\descript{\href{https://leetcode.com/ananyo141/}{LeetCode | }}\descript{\href{https://ananyo141.github.io}{Portfolio}}}\underlineheader{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+    \runsubsection{Netaji Subhash Engineering College}\hspace*{\fill}  \location{2020 - 2024}\\
+    \descript{Bachelor of Technology Computer Science and Engineering}\hspace*{\fill}\location{Kolkata, India}\\
+    CGPA: 9.96\\
+    
+    % \sectionsep
+
+    % \runsubsection{GNX NSEC}\hspace*{\fill}  \location{2022 - 2023}\\
+    % \descript{President (hosted technical events and workshops)}\hspace*{\fill}\location{Kolkata, India}\\
+    
+    \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Experience
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Experience}
+        \runsubsection{HJ Infotech}\descript{| Full Stack Developer}\hfill \location{Remote | July 2022 – September 2022}
+            \vspace{4pt}
+\begin{tightemize}
+\item  Built the company landing website, deployed using Microsoft Azure
+\item  Increased the website reach by 80\% using Search Engine Optimisation (SEO).
+\item[] \custombold{Tech Used: TailwindCSS, WordPress, Azure Pipelines, SemRush}
+\end{tightemize}
+            \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Skills
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Skills}
+\begin{tightemize}
+\item  \custombold{Programming Languages:} Python, TypeScript, JavaScript, Dart, Bash/Shell
+\item  \custombold{Libraries/Frameworks:} ReactJS, NextJS, Node/ExpressJS, Django, Flutter
+\item  \custombold{Tools/Platforms:} Git/Github, Linux, Windows, GNU Coreutils, vim, Docker
+\end{tightemize}
+            \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Projects
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{Projects / Open-Source}
+        \raggedright
+        
+            \runsubsection{\large{Peer Messaging}}
+            \descript{| \href{https://github.com/ananyo141/PeerMessaging}{Link}}\hfill \location{NextJS13, TailwindCSS, ChakraUI, Redux-Toolkit}\\
+            \begin{tightemize}
+\item[] \customitalic{A Peer to peer messaging platform, uses the local network to chat and WebRTC for voice/video-calling.}
+\item  \custombold{Realtime Calling / Chatting}, with zero dependency on a centralized server
+\item  \custombold{Intuitive UI}, responsive to all screen dimensions
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{ComputerShop}}
+            \descript{| \href{https://github.com/ananyo141/ComputerShop}{Link}}\hfill \location{MERN, Redux Toolkit, TypeScript}\\
+            \begin{tightemize}
+\item[] \customitalic{A fully functional, featureful online shopping app, with all core functionality of an e-commerce application}
+\item  Authorized login using \custombold{JWT} have features like \custombold{add to cart, place order and fetch previous orders}
+\item  Globally state managed with order notification support
+\item  Implemented CRUD operations using \custombold{Mongoose ORM for 70\% efficient query.}
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Snappio}}
+            \descript{| \href{https://github.com/Snappio/snappio\_backend}{Link}}\hfill \location{Django Rest Framework, Django Channels, Redis}\\
+            \begin{tightemize}
+\item[] \customitalic{A social-media/chat app that incorporates post updates and event-planning with friends.}
+\item  \custombold{RESTful api} written with Django Rest Framework with object-oriented generic classes
+\item  \custombold{Web-socket protocol} with Django Channels with custom authentication for realtime communication
+\item  Pub/Sub provided by \custombold{Redis}, documentation supported by \custombold{swagger/redoc} standards
+\end{tightemize}
+            \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Hackathons
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{National Hackathons}
+        \runsubsection{Smart India Hackathon}\hfill \location{Excel College, Coimbatore - 2022}
+            \vspace{4pt}
+\begin{tightemize}
+\item  \customitalic{Tech Used:} \custombold{Flutter / Dart, API integration with Dio http library, Postman}
+\item  \customitalic{Result:} \custombold{First Runners Up}
+\end{tightemize}
+\sectionsep
+        
+\runsubsection{Cognizance TechFest}\hfill \location{IIT Roorkee - 2023}
+            \vspace{4pt}
+\begin{tightemize}
+\item  \customitalic{Tech Used:} \custombold{Django Rest Framework, Django Channels}
+\item  \customitalic{Result:} \custombold{4th in Global Championship}
+\end{tightemize}
+            \sectionsep
+
+      \ 
+      \end{document}
